@@ -48,7 +48,7 @@ const BarraLateral = () => {
 				</button>
 				<br></br>
 				<a
-					className="w-2/3 px-4 py-2 text-[1.2rem] cursor-pointer underline underline-offset-4 decoration-2 hover:text-Primario  "
+					className="w-2/3 px-4 py-2 text-[1.2rem] cursor-pointer underline underline-offset-4 decoration-2 hover:text-Secundario  "
 					href="https://github.com/ignaciokang/CV/raw/main/src/documents/CV%20-%20Ignacio%20Kang.pdf"
 					download="CV-Ignacio-Kang-SPA.pdf"
 				>

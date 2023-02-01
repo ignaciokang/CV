@@ -94,8 +94,8 @@ const Resumen = () => {
 					de interés.
 				</p>
 				<p>
-					Me caracterizo por ser versátil, práctico, prolijo, creativo y
-					optimista.
+					Me caracterizo por ser versátil, práctico, prolijo, creativo e
+					innovador.
 				</p>
 			</div>
 

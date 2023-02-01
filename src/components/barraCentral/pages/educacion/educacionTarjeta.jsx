@@ -8,11 +8,11 @@ const EducacionTarjeta = ({ data }) => {
 				<img
 					src={data.img}
 					alt="Institucion"
-					className="h-12 mx-auto col-span-1"
+					className="p-4 mx-auto col-span-1 object-cover"
 				/>
-				<div className=" col-span-3 px-3">
-					<p className="text-sm font-bold">{data.carrera}</p>
-					<p className="text-xs">{data.institucion}</p>
+				<div className="col-span-3 px-3">
+					<p className="text-lg font-bold">{data.carrera}</p>
+					<p className="text-base">{data.institucion}</p>
 				</div>
 			</div>
 			<div className="grid gird-rows-3 py-2 px-4 text-Primario">

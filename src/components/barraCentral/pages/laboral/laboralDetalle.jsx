@@ -21,15 +21,15 @@ const LaboralDetalle = ({ trabajo, activarTrabajo }) => {
 					className="bg-white rounded-xl p-2 h-24 w-24 object-contain"
 				/>
 				<div className="text-center">
-					<p className="text-xl mb-2">{trabajo[0].puesto}</p>
-					<div className="flex items-center space-x-2">
-						<HiOutlineOfficeBuilding className="text-Primario text-lg" />
+					<p className="text-2xl mb-2 font-semibold">{trabajo[0].puesto}</p>
+					<div className="flex items-center space-x-2 text-lg">
+						<HiOutlineOfficeBuilding className="text-Primario text-xl" />
 						<p className="text-white">
 							{' '}
 							<span className="font-semibold">{trabajo[0].empresa}</span> (
 							{trabajo[0].rubro}){' '}
 						</p>
-						<IoMdTime className="text-Primario text-lg" />
+						<IoMdTime className="text-Primario text-xl" />
 						<p className="text-white">
 							{trabajo[0].desde} / {trabajo[0].hasta}{' '}
 						</p>
@@ -41,14 +41,17 @@ const LaboralDetalle = ({ trabajo, activarTrabajo }) => {
 					}}
 					className="text-3xl hover:text-Primario"
 				>
-					<AiOutlineCloseCircle className="md:text-4xl sm:text-xl hover:text-Primary" />
+					<AiOutlineCloseCircle className="text-4xl hover:text-Primary" />
 				</button>
 			</div>
-			<ul className="text-left grid grid-cols-2 bg-Fondo2 rounded-xl row-span-3 p-12 gap-3">
+			<div
+				className="text-left  grid grid-cols-2 bg-Fondo2 rounded-xl row-span-3 p-12 gap-x-12 gap-y-3"
+				id="textos"
+			>
 				{trabajo[0].tareas.map((data, index) => {
-					return <li className="align-middle">- {data}</li>;
+					return <div dangerouslySetInnerHTML={{ __html: data }}></div>;
 				})}
-			</ul>
+			</div>
 		</a.div>
 	);
 };

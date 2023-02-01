@@ -9,7 +9,7 @@ const ProyectosDetalle = ({ proyecto, activarProyecto }) => {
 				<div className="relative rounded-xl overflow-hidden">
 					<img
 						src={proyecto[0].imagen}
-						alt={proyecto.nambre}
+						alt={proyecto[0].nombre}
 						className="absolute h-full w-full object-cover object-top "
 					/>
 					<p className="absolute bottom-0 w-full text-center bg-Fondo2 p-2 font-semibold">
@@ -30,15 +30,25 @@ const ProyectosDetalle = ({ proyecto, activarProyecto }) => {
 						<p>Categoría: {proyecto[0].categoria}</p>
 						<p>Tipo de proyecto: {proyecto[0].tipo}</p>
 						{/* <p>Autor: {proyecto[0].autor}</p> */}
-						<a className="bg-Primario p-2 rounded-full text-black font-semibold flex items-center justify-center gap-2 cursor-pointer hover:bg-Secundario hover:text-white transition-colors ease-in">
+						<a
+							className="bg-Primario p-2 rounded-full text-black font-semibold flex items-center justify-center gap-2 cursor-pointer hover:bg-Secundario hover:text-white transition-colors ease-in"
+							href={proyecto[0].link}
+							target="_blank"
+						>
 							<MdOutlineComputer />
-							Visitar Web
+							{proyecto[0].boton}
 						</a>
 					</div>
 				</div>
 			</div>
-			<div className=" bg-Fondo2 rounded-xl px-12 py-6 flex flex-col justify-between row-span-4 h-full">
-				<p className="text-md">{proyecto[0].descripcion}</p>
+			<div
+				className=" bg-Fondo2 rounded-xl px-12 py-6 flex flex-col justify-between row-span-4 h-full"
+				id="textos"
+			>
+				<div
+					dangerouslySetInnerHTML={{ __html: proyecto[0].descripcion }}
+				></div>
+
 				<div>
 					<p className="font-semibold mb-3">Tecnologías utilizadas:</p>
 					<div className="flex justify-around">
