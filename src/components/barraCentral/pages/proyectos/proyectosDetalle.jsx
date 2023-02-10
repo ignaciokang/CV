@@ -1,10 +1,20 @@
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { MdOutlineComputer } from 'react-icons/md';
 import Tecnologias from './tecnologias';
+import { useSpring, a } from 'react-spring';
 
 const ProyectosDetalle = ({ proyecto, activarProyecto }) => {
+	const animation1 = useSpring({
+		from: { opacity: 0 },
+		to: { opacity: 1 },
+		config: { duration: 1000 },
+	});
+
 	return (
-		<div className="p-12 h-full w-full grid grid-rows-[7] gap-12">
+		<a.div
+			style={animation1}
+			className="p-12 h-full w-full grid grid-rows-[7] gap-12"
+		>
 			<div className="grid grid-cols-2 gap-12 justify-between row-span-3">
 				<div className="relative rounded-xl overflow-hidden">
 					<img
@@ -58,7 +68,7 @@ const ProyectosDetalle = ({ proyecto, activarProyecto }) => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</a.div>
 	);
 };
 

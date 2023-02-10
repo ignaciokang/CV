@@ -57,8 +57,22 @@ const ProjectsData = [
 		descripcion:
 			'Final de materia: Maquetado Web de la Escuela Da Vinci (Técnico Superior en Diseño y Programación Web). El objetivo de la materia fue diseñar y <b>maquetar</b> una página web para nuestra banda musical favorita.',
 		tecnologias: ['html', 'css', 'photoshop'],
-		link: '',
+		link: 'https://ignaciokang.github.io/lpda/index.html',
 		boton: 'Visitar Web',
+	},
+	{
+		id: 'cv',
+		nombre: 'CV: Ignacio Kang',
+		imagen:
+			'https://lh3.googleusercontent.com/PK6nWpEbdzGnu31cyCV7HbaqHekN2GQiP-f82blY37VMckuBimK2bs3Ru7ZVdrFuhBDnFlxEOzWiQPGsUFHtJ3CSodTmksZ-718gHYY1a1sU_0JR0zze0M4ZlshLtjI3PRkVYqe8f6YtjynF9eyP-yiME9koTxUAAn5MGK2nA2mFjLqYh3YHX_AKOcC06lM21UUB8xnKjJ8CpsRRkk27vZ4IS2CWnw69Sw7IHy2Gx2XwyVLQr7ar0jVHrxbnBRn_nKkvYYTUWj_0sMn1xZEE2TlJm3sDqsWmHt8oLKdmDwrELiuoKvC96KZtZV9udxv_1wu2hnTLrA3ub32rPJQi6BQEbSF0NkoVD-Y5XXf7eCnc0lqVKy22rsUCKEH76wQcyJU-g2OSkjn_RZhxiKPD6nicag5BvQjKEg8h-pe_R2JfPuja9zQhyea0SzdIyVtNZY0TLbDVaK1_YzVSn1CcfWIfLPgLryp1KW-LT8TqTuolfaIav8TQUZ0g7Nx7P-Gg1um1RImcCbPKpMPw5PoiNsQocmr2DqpFt2a9omVvwW4nZF2jsO01MwlE0z0RdFVc970vtKeJTkcrq7bqIcqT0NThPxxOG66tF8_o1xoSyeCH2OuSthYzpACwDdrKKC_hHGGIm5SKdmPK3wCAGx_7Cpx5SaK4wkS9v-rY7Twq9yykYzgTvigS6-avLgsQRtAvRddArBw9e4rlVR5zNNwiXK5188U1AFIH3n66ByZM28IC5qzoRg6IrUCo7ICJV1IkJEbwo38vmuelG6c7z8EH88JDLUafI-o-glccH7Tuu23Mdr5d03rAsnVQcllCtuFQ-_pURTtIVN1Pn_nh4gOJ5x-kF5tKcpO76czn3rXYNNc6a6Rwe13AMI-_becw0eJPQx-3PMySCYBZmmj-hiieCxZcgGA1qHz9WhcJR_TQkH9pPBTqDaznsZG-68HLmz0mtiAInfrvZyHz0QNFh_IUycz48qamGvcrmhgbg1wwHe6AHbKbp37P53etPnnd0D-FeGMmbsI1lmIrSXJhb1F1Fe8tNUswU46EIGT3gFHIZEu_CG0pWSsJdZHfTDM=w800-h400-no?authuser=0',
+		categoria: 'Desarrollo Web',
+		tipo: 'Personal',
+		fecha: 'Julio 2022',
+		autor: 'Ignacio Kang',
+		descripcion: 'Este proyecto está desarrollado en React. ',
+		tecnologias: ['react', 'tailwind', 'javascript', 'github'],
+		link: 'https://drive.google.com/drive/u/0/folders/1AqYxoFMiRELvw8OcXIpy6xAEzkIp4KMj',
+		boton: 'Informe técnico',
 	},
 	{
 		id: 'comunicacionVisual',
@@ -77,7 +91,7 @@ const ProjectsData = [
 	},
 	{
 		id: 'lolazo',
-		nombre: 'LOL trainer',
+		nombre: 'LOL trainer Web',
 		imagen:
 			'https://lh3.googleusercontent.com/pw/AMWts8CFjQAa8OY4AFGHbbWdxg2qp9nuqDo-Jvjxvm7_A1fOYjwn9OgvktwsUPRIfzx9JC_ovBzAINr6tbPrmMe65qAnyKIvF6OFXmhizeizP-FEPtbXIxl6ecH_gZ0XCgX1YD-3GFXfIxsHTGBpbeCQWfUv=w800-h400-no?authuser=0',
 		categoria: 'Desarrollo Web',
@@ -117,6 +131,21 @@ const ProjectsData = [
 		descripcion:
 			'DuelixGames es una cuenta de Instagram y Facebook dedicada a la comunidad de jugadores del videojuego de fútbol FIFA. En la cual se organizaban <b>torneos online</b>. Mediante noticias, memes y juegos la cuenta alcanzó los 5mil seguidores en su pico de rendimiento. ',
 		tecnologias: ['photoshop'],
+		link: 'https://drive.google.com/drive/u/0/folders/1XiVEf5xZjnidJNO3MaGiOKchYM4KSPZ4',
+		boton: 'Ver Imágenes',
+	},
+	{
+		id: 'afip',
+		nombre: 'RPA: Bot facturador AFIP ',
+		imagen:
+			'https://lh3.googleusercontent.com/N0bluvHJFycgjZxQ92Kg1W-ALFbHXEB_WQkgFexosyZlDgnY3LyWvJ1PFeRxuUvxh8Lrf_DM1AldArcRMFXGDgakueesyKXPoAIV78YN8yZ06j3VIEFbmbGxxOSyAdwDLtWP4VM5oh5YBYOGmtoPcYXltG2XiW9zbX-k4Dzv7UC7jMpUc02qZ7u_3YAWdImTmNGr59SJxRILHiOsKZE6ln3LLO3PrKBWBstxDrEIQvxIwuzlNB5D3pcXyQR1WrLKEmdJIN0yU6Jte2u9FZXg9b5HI9IWdhNnxYwivnjBzUuZS29x-MLJqMjpzk8TbfO07LZ5tMLhovOS0eRtf3ecz1at4ouWNkuHur149Dj1blvThl6mMn8UJF-cXJFpCpGZ52ooZJZQqep20NLO5xeTRAaSpMp-PB6t_aaGMfw32c-NIYml72nLvtHH3ImxoVzCEEhNXQkBzfODaROTL0cMW2pxabsG6uwdM9r2gXTkUrINIolHp_jtFwwAHTh3ecb8oWWktOLLsYi0YAOdxWMMiyMCkZo5TezHpYD8BoXx41ajdN7gSk8oLIohkG2sdmhc71yt9-JNMGvpLDTiNfRByj4CDCIrKV4AztveWD9nxb61DO5iOCEmu0kMepPXFC7YfBbAAPbe1iCCU-CKj5OtFs18rdUJs-ETWcRJFlSfcA3avvJXLrNw5osF4_3PAtHEU_bvvoBvw2ToJrwuS3v56NTqAdNNg59NtqaqS6bSJI8Gp_IjNPzInTN8yfDZGU8BIfP7zG1VC-KKb6mpC5DI5-C2gw4jE2AbHxP7XW7kel9e2jrQ54dhDvI0wPVeHD3lA6LT1QzSLHv2nQmQ4OhMxpjqkB7hLndPvpoZwbYHDuoBtgfLvedNNt4mgVBOL2AZGICOM59Nu2pte72_iqIvDo-zC_ZsgVddcdYi4U8IJd0IRyOTaqeEQxv2P9ROpiEtfxiKy3NQcNS-K7vyioroXRC1sMWQTf0KW4vA5g98UBJMivb5fyNB09dOvPJUOp6T-t_hdU6tsWzhcXiRl7sx_OrND0h-zMPD9kY4VABwfFnyStfOFB-J-bgAXh0=w800-h400-no?authuser=0',
+		categoria: 'RPA',
+		tipo: 'Emprendimiento',
+		fecha: 'Diciembre 2022',
+		autor: 'Ignacio Kang',
+		descripcion:
+			'Bot facturador de AFIP en base a los datos de una tabla de Excel, desarrollado en UiPath. Una vez generada la factura, se actualizan los registros procesados en la tabla de Excel.',
+		tecnologias: ['uipath'],
 		link: 'https://drive.google.com/drive/u/0/folders/1XiVEf5xZjnidJNO3MaGiOKchYM4KSPZ4',
 		boton: 'Ver Imágenes',
 	},

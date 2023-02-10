@@ -87,7 +87,10 @@ const Resumen = () => {
 
 	return (
 		<div className="h-full bg-Fondo3 p-12 grid grid-rows-3 gap-12">
-			<div className=" bg-Fondo2 rounded-xl row-span-1 text-center flex flex-col justify-center">
+			<a.div
+				style={animation1}
+				className=" bg-Fondo2 rounded-xl row-span-1 text-center flex flex-col justify-center"
+			>
 				<p>Soy un desarrollador Full Stack en constante crecimiento.</p>
 				<p>
 					Apasionado por crear y descubir, veo en la tecnología infinitas áreas
@@ -97,7 +100,7 @@ const Resumen = () => {
 					Me caracterizo por ser versátil, práctico, prolijo, creativo e
 					innovador.
 				</p>
-			</div>
+			</a.div>
 
 			<a.div style={animation1} className="grid grid-cols-2 gap-y-2 row-span-2">
 				{skills.map((data) => {

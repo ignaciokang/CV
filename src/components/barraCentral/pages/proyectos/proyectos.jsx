@@ -2,6 +2,7 @@ import { useState } from 'react';
 import projectsData from '../../../../constants/projectsData.js';
 import ProyectosDetalle from './proyectosDetalle.jsx';
 import ProyectosTarjeta from './proyectosTarjeta.jsx';
+import { useSpring, a } from 'react-spring';
 
 const Proyectos = () => {
 	//Listado de proyectos, despues voy a poder filtrar por categoría.
@@ -39,8 +40,14 @@ const Proyectos = () => {
 		}
 	};
 
+	const animation1 = useSpring({
+		from: { opacity: 0 },
+		to: { opacity: 1 },
+		config: { duration: 1000 },
+	});
+
 	return (
-		<div className="w-full h-full overflow-auto">
+		<a.div style={animation1} className="w-full h-full overflow-auto">
 			{activo ? (
 				<>
 					<ProyectosDetalle
@@ -62,7 +69,7 @@ const Proyectos = () => {
 					})}
 				</div>
 			)}
-		</div>
+		</a.div>
 	);
 };
 

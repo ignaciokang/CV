@@ -1,4 +1,4 @@
-import { FaNodeJs } from 'react-icons/fa';
+import { FaNodeJs, FaRobot } from 'react-icons/fa';
 import { ImDatabase as SQL } from 'react-icons/im';
 import { AiFillGithub } from 'react-icons/ai';
 
@@ -92,6 +92,11 @@ const TecnologiasLogo = [
 		id: 'tailwind',
 		nombre: 'Tailwind CSS',
 		logo: <SiTailwindcss />,
+	},
+	{
+		id: 'uipath',
+		nombre: 'UiPath',
+		logo: <FaRobot />,
 	},
 ];
 

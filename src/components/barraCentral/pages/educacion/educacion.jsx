@@ -3,9 +3,15 @@ import EducacionData from '../../../../constants/educacionData';
 import EducacionTarjeta from './educacionTarjeta';
 
 const Educacion = () => {
+	// const animation1 = useSpring({
+	// 	from: { y: 100, opacity: 0 },
+	// 	to: { y: 0, opacity: 1 },
+	// 	config: { duration: 1000 },
+	// });
+
 	const animation1 = useSpring({
-		from: { y: 100, opacity: 0 },
-		to: { y: 0, opacity: 1 },
+		from: { opacity: 0 },
+		to: { opacity: 1 },
 		config: { duration: 1000 },
 	});
 

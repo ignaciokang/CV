@@ -16,7 +16,7 @@ const LaboralTarjeta = ({ trabajo, activarTrabajo }) => {
 				className="bg-white rounded-xl p-2 h-24 w-24 object-contain"
 			/>
 			<div>
-				<p className="text-xl mb-2">{trabajo.puesto}</p>
+				<p className="text-xl mb-2 font-semibold">{trabajo.puesto}</p>
 				<div className="flex items-center space-x-2">
 					<HiOutlineOfficeBuilding className="text-Primario text-lg" />
 					<p className="text-white">

@@ -5,8 +5,6 @@ import { useSpring, a } from 'react-spring';
 import { useState } from 'react';
 
 const Laboral = () => {
-	//TODO poner negrita a los campos
-	//dangerouslySetInnerHtml 1:32:20 https://www.youtube.com/watch?v=atebfXxl9B4
 	const trabajos = LaboralData;
 	//Listado de proyectos, despues voy a poder filtrar por categoría.
 	const [listadoTrabajos, setListadoTrabajos] = useState(trabajos);
@@ -28,13 +26,13 @@ const Laboral = () => {
 	};
 
 	const animation1 = useSpring({
-		from: { x: 100, opacity: 0 },
-		to: { x: 0, opacity: 1 },
+		from: { opacity: 0 },
+		to: { opacity: 1 },
 		config: { duration: 1000 },
 	});
 
 	return (
-		<div className="h-full p-12 overflow-auto">
+		<a.div style={animation1} className="h-full p-12 overflow-auto">
 			{activo ? (
 				<>
 					<LaboralDetalle
@@ -56,7 +54,7 @@ const Laboral = () => {
 					})}
 				</div>
 			)}
-		</div>
+		</a.div>
 	);
 };
 
