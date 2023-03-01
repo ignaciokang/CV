@@ -41,7 +41,7 @@ const BarraCentral = () => {
 					}
 					onClick={() => activarPagina(paginas.educacion)}
 				>
-					Educacion
+					Educación
 				</button>
 				<button
 					className={

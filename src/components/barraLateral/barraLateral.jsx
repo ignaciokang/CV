@@ -49,7 +49,7 @@ const BarraLateral = () => {
 				<br></br>
 				<a
 					className="w-2/3 px-4 py-2 text-[1.2rem] cursor-pointer underline underline-offset-4 decoration-2 hover:text-Secundario  "
-					href="https://github.com/ignaciokang/CV/raw/main/src/documents/CV%20-%20Ignacio%20Kang.pdf"
+					href="https://drive.google.com/drive/u/0/folders/1bcT1Zn1hCvvG5DrBnGKWmow_CJaazxL-"
 					download="CV-Ignacio-Kang-SPA.pdf"
 				>
 					Descargar CV

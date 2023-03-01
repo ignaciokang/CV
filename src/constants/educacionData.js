@@ -1,6 +1,6 @@
 import imagenes from './images';
 
-const EducacionData = [
+export const EducacionData = [
 	{
 		img: imagenes.davinci,
 		carrera: 'Técnico Superior en Diseño y Programación Web',
@@ -29,6 +29,9 @@ const EducacionData = [
 		descargar: '',
 		tipo: 'Secundario',
 	},
+];
+
+export const CursosData = [
 	{
 		img: imagenes.utn,
 		carrera: 'FullStack Developer',
@@ -52,5 +55,3 @@ const EducacionData = [
 		tipo: 'Curso',
 	},
 ];
-
-export default EducacionData;

@@ -86,10 +86,10 @@ const Resumen = () => {
 	];
 
 	return (
-		<div className="h-full bg-Fondo3 p-12 grid grid-rows-3 gap-12">
+		<div className="h-full bg-Fondo3 p-12 grid grid-rows-3 gap-12 ">
 			<a.div
 				style={animation1}
-				className=" bg-Fondo2 rounded-xl row-span-1 text-center flex flex-col justify-center"
+				className=" bg-Fondo2 rounded-xl row-span-1 text-center flex flex-col justify-center text-base xl:text-lg"
 			>
 				<p>Soy un desarrollador Full Stack en constante crecimiento.</p>
 				<p>
@@ -98,18 +98,18 @@ const Resumen = () => {
 				</p>
 				<p>
 					Me caracterizo por ser versátil, práctico, prolijo, creativo e
-					innovador.
+					ingenioso.
 				</p>
 			</a.div>
 
 			<a.div style={animation1} className="grid grid-cols-2 gap-y-2 row-span-2">
 				{skills.map((data) => {
 					return (
-						<div className="flex justify-center items-center text-[1.2rem] text-Primario">
+						<div className="flex justify-center items-center text-xl xl:text-2xl text-Primario">
 							<data.logo />
 							<div className="bg-Fondo2 w-1/2 rounded-[2rem] ml-2 text-center relative overflow-hidden">
 								<div className="w-full top-0 absolute h-full ">
-									<p className="text-[1rem] p-[2px] font-semibold text-white">
+									<p className="text-base xl:text-lg  font-semibold text-white">
 										{data.nombre}{' '}
 									</p>
 								</div>
