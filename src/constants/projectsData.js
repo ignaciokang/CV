@@ -16,19 +16,19 @@ const ProjectsData = [
 		boton: 'Visitar Web',
 	},
 	{
-		id: 'sudakaMu',
-		nombre: 'Servidor Mu Online',
+		id: 'memotest',
+		nombre: 'Memotest Scaloneta',
 		imagen:
-			'https://lh3.googleusercontent.com/pw/AMWts8DhIAz-ka3txFV-RjBKXDRlJpqSAbRKQ1MOpl_23FOV3t1qsl_fv19pcLC6kzO-klComWDC9c5gpCK0zGRzzYi402Of2T1ACLrGCeO3ALxhxtxk1OKMW9Z-susocQra1mKTPi9-AhQTYzqCv9954R_G=w800-h400-no?authuser=0',
+			'https://lh3.googleusercontent.com/pw/AJFCJaVZmXHcmofjT98n30Cql6PScfF2MnEajwbESGVEkG2mrNagNs_NJRh9YAiRkwNv1hPKH8Xg8k3TkQNJXgwlsQXFJhuxR9GV32x4JmCb4fpRLt5odI-m25ltfPSSRgIfgNVvS2eNDhY4VnPo7Glad73Q=w800-h400-s-no?authuser=0',
 		categoria: 'Desarrollo Videojuegos',
 		tipo: 'Emprendimiento',
-		fecha: 'Julio 2022',
+		fecha: 'Mayo 2023',
 		autor: 'Ignacio Kang',
 		descripcion:
-			'SudakaMu es un servidor del videojuego MuOnline. Me encargué de configurar armas, modelos 3d, estadísticas de personajes y bases de datos para poder <b>crear el servidor</b> y alojarlo en un hosting privado. También diseñé logo y banners publicitarios. En su pico de rendimiento alojó más de <b>100 personas online</b>.',
-		tecnologias: ['sql', 'cplus', 'github', 'photoshop'],
-		link: 'https://drive.google.com/drive/u/0/folders/16kn64EMsMIkvcOpbJabR3ohsOM-9ag4-',
-		boton: 'Ver imágenes',
+			'Este memotest es un homenaje a los <b>campeones del mundo</b>. La lógica del juego está desarrollado en <b>Javascript</b>, para el front end se utiliza <b>React</b>',
+		tecnologias: ['react', 'javascript', 'github', 'photoshop'],
+		link: 'https://ignaciokang.github.io/memotest/',
+		boton: 'Visitar Web',
 	},
 	{
 		id: 'estrellaWeb',
@@ -69,10 +69,26 @@ const ProjectsData = [
 		tipo: 'Personal',
 		fecha: 'Julio 2022',
 		autor: 'Ignacio Kang',
-		descripcion: 'Este proyecto está desarrollado en React. ',
+		descripcion:
+			'Este proyecto está desarrollado en React. Por el momento cuenta con versión web. Se está desarrollando versión mobile y temas dark/light',
 		tecnologias: ['react', 'tailwind', 'javascript', 'github'],
 		link: 'https://drive.google.com/drive/u/0/folders/1AqYxoFMiRELvw8OcXIpy6xAEzkIp4KMj',
 		boton: 'Informe técnico',
+	},
+	{
+		id: 'sudakaMu',
+		nombre: 'Servidor Mu Online',
+		imagen:
+			'https://lh3.googleusercontent.com/pw/AMWts8DhIAz-ka3txFV-RjBKXDRlJpqSAbRKQ1MOpl_23FOV3t1qsl_fv19pcLC6kzO-klComWDC9c5gpCK0zGRzzYi402Of2T1ACLrGCeO3ALxhxtxk1OKMW9Z-susocQra1mKTPi9-AhQTYzqCv9954R_G=w800-h400-no?authuser=0',
+		categoria: 'Desarrollo Videojuegos',
+		tipo: 'Emprendimiento',
+		fecha: 'Julio 2022',
+		autor: 'Ignacio Kang',
+		descripcion:
+			'SudakaMu es un servidor del videojuego MuOnline. Me encargué de configurar armas, modelos 3d, estadísticas de personajes y bases de datos para poder <b>crear el servidor</b> y alojarlo en un hosting privado. También diseñé logo y banners publicitarios. En su pico de rendimiento alojó más de <b>100 personas online</b>.',
+		tecnologias: ['sql', 'cplus', 'github', 'photoshop'],
+		link: 'https://drive.google.com/drive/u/0/folders/16kn64EMsMIkvcOpbJabR3ohsOM-9ag4-',
+		boton: 'Ver imágenes',
 	},
 	{
 		id: 'comunicacionVisual',
