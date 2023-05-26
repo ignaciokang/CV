@@ -25,7 +25,7 @@ const ProjectsData = [
 		fecha: 'Mayo 2023',
 		autor: 'Ignacio Kang',
 		descripcion:
-			'Este memotest es un homenaje a los <b>campeones del mundo</b>. La lógica del juego está desarrollado en <b>Javascript</b>, para el front end se utiliza <b>React</b>',
+			'Este memotest es un homenaje a los <b>campeones del mundo</b>. La lógica del juego está desarrollado en <b>Javascript</b>, para el front end se utiliza <b>React</b>. El diseño responsivo se adapta a formato desktop y mobile.',
 		tecnologias: ['react', 'javascript', 'github', 'photoshop'],
 		link: 'https://ignaciokang.github.io/memotest/',
 		boton: 'Visitar Web',
