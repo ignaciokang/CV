@@ -21,7 +21,7 @@ const BarraCentral = () => {
 
 	return (
 		<div className="h-full">
-			<nav className="flex justify-around items center lg:h-1/6 sm:h-[10%] bg-Fondo2 text-[1.2rem] uppercase">
+			<nav className="flex justify-around items center lg:h-1/6 sm:h-[10%] bg-Fondo2 text-[0.8rem] lg:text-[1.2rem] uppercase">
 				<button
 					id="Resumen"
 					className={
