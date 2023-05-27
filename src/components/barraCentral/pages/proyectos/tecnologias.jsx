@@ -16,10 +16,10 @@ const Tecnologias = (tecnologiaData) => {
 	}, []);
 
 	return (
-		<div className="text-Primario flex flex-col items-center text-5xl gap-1">
+		<div className="text-Primario flex flex-col items-center text-3xl lg:text-5xl gap-1">
 			<>{tecno.logo}</>
 
-			<p className="text-white text-lg">{tecno.nombre}</p>
+			<p className="text-white text-base lg:text-lg">{tecno.nombre}</p>
 		</div>
 	);
 };

@@ -13,35 +13,35 @@ const ProyectosDetalle = ({ proyecto, activarProyecto }) => {
 	return (
 		<a.div
 			style={animation1}
-			className="p-12 h-full w-full grid grid-rows-[7] gap-12"
+			className="lg:p-12 p-4 h-full w-full grid grid-rows-6 lg:grid-rows-[7] lg:gap-12 gap-4 "
 		>
-			<div className="grid grid-cols-2 gap-12 justify-between row-span-3">
-				<div className="relative rounded-xl overflow-hidden">
+			<div className="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 lg:gap-12 gap-4 justify-between row-span-3">
+				<div className="relative rounded-xl overflow-hidden w-full">
 					<img
 						src={proyecto[0].imagen}
 						alt={proyecto[0].nombre}
-						className="absolute h-full w-full object-cover object-top "
+						className=" w-full object-cover object-top "
 					/>
 					<p className="absolute bottom-0 w-full text-center bg-Fondo2 p-2 font-semibold">
 						{proyecto[0].nombre}
 					</p>
 				</div>
-				<div className="relative">
+				<div className="relative flex flex-col ">
 					<button
 						onClick={() => {
 							activarProyecto(proyecto.id);
 						}}
-						className="top-0 right-0 absolute text-3xl hover:text-Primario"
+						className="top-0 right-0 absolute text-3xl hover:text-Primario lg:block sm:hidden"
 					>
 						<AiOutlineCloseCircle />
 					</button>
-					<div className="text-center h-full flex flex-col justify-between ">
+					<div className="text-center h-full flex flex-col justify-between">
 						<p>Nombre: {proyecto[0].nombre}</p>
 						<p>Categoría: {proyecto[0].categoria}</p>
 						<p>Tipo de proyecto: {proyecto[0].tipo}</p>
 						{/* <p>Autor: {proyecto[0].autor}</p> */}
 						<a
-							className="bg-Primario p-2 rounded-full text-black font-semibold flex items-center justify-center gap-2 cursor-pointer hover:bg-Secundario hover:text-white transition-colors ease-in"
+							className="bg-Primario mt-1 lg:mt-0 p-1 lg:p-2 rounded-full text-black font-semibold flex items-center justify-center gap-2 cursor-pointer hover:bg-Secundario hover:text-white transition-colors ease-in"
 							href={proyecto[0].link}
 							target="_blank"
 						>
@@ -52,7 +52,7 @@ const ProyectosDetalle = ({ proyecto, activarProyecto }) => {
 				</div>
 			</div>
 			<div
-				className=" bg-Fondo2 rounded-xl px-12 py-6 flex flex-col justify-between row-span-4 h-full"
+				className=" bg-Fondo2 rounded-xl px-4 lg:px-12 py-3 lg:py-6 flex flex-col justify-between lg:row-span-4 row-span-3 h-full text-sm lg:text-base overflow-y-auto"
 				id="textos"
 			>
 				<div
@@ -68,6 +68,15 @@ const ProyectosDetalle = ({ proyecto, activarProyecto }) => {
 					</div>
 				</div>
 			</div>
+			<button
+				onClick={() => {
+					activarProyecto(proyecto.id);
+				}}
+				className="text-lg text-center bg-gradient-to-r from-Primario to-Secundario p-2 w-1/2 mx-auto rounded-xl sm:block lg:hidden"
+			>
+				{' '}
+				Volver{' '}
+			</button>
 		</a.div>
 	);
 };

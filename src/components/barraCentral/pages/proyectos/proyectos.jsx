@@ -56,11 +56,12 @@ const Proyectos = () => {
 					/>
 				</>
 			) : (
-				<div className="grid grid-cols-3 p-12 gap-12">
-					{listadoProyectos.map((data) => {
+				<div className="grid grid-cols-1 lg:grid-cols-3 lg:p-12 lg:gap-12 p-4 gap-4">
+					{listadoProyectos.map((data, index) => {
 						return (
 							<>
 								<ProyectosTarjeta
+									key={index}
 									proyecto={data}
 									activarProyecto={activarProyecto}
 								/>

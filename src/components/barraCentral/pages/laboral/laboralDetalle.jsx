@@ -15,9 +15,9 @@ const LaboralDetalle = ({ trabajo, activarTrabajo }) => {
 	return (
 		<a.div
 			style={animation1}
-			className="w-full h-full lg:grid lg:grid-rows-4 gap-12 lg:gap-12 overflow-y-auto lg:overflow-visible"
+			className="w-full h-full grid grid-rows-4 gap-4 lg:gap-12"
 		>
-			<div className="flex flex-col lg:flex-row items-center row-span-1 justify-between gap-y-4 lg:gap-y-0">
+			<div className="flex flex-col lg:flex-row items-center lg:row-span-1 justify-between gap-y-4 lg:gap-y-0 row-span-2">
 				<img
 					src={trabajo[0].logo}
 					alt="Logo empresa"
@@ -25,15 +25,15 @@ const LaboralDetalle = ({ trabajo, activarTrabajo }) => {
 				/>
 				<div className="text-center">
 					<p className="text-2xl mb-2 font-semibold">{trabajo[0].puesto}</p>
-					<div className="flex items-center space-x-2 text-lg">
-						<HiOutlineOfficeBuilding className="text-Primario text-xl" />
-						<p className="text-white">
+					<div className="flex items-center space-x-2 lg:text-lg text-base">
+						<HiOutlineOfficeBuilding className="text-Primario text-[2rem] lg:text-xl" />
+						<p>
 							{' '}
 							<span className="font-semibold">{trabajo[0].empresa}</span> (
 							{trabajo[0].rubro}){' '}
 						</p>
-						<IoMdTime className="text-Primario text-xl" />
-						<p className="text-white">
+						<IoMdTime className="text-Primario text-[2rem] lg:text-xl" />
+						<p>
 							{trabajo[0].desde} / {trabajo[0].hasta}{' '}
 						</p>
 					</div>
@@ -48,7 +48,7 @@ const LaboralDetalle = ({ trabajo, activarTrabajo }) => {
 				</button>
 			</div>
 			<div
-				className="text-left grid grid-cols-1 lg:grid-cols-2 bg-Fondo2 rounded-xl row-span-3 p-4 lg:p-12 gap-x-12 gap-y-3 my-4 lg:my-0"
+				className="text-left grid grid-cols-1 lg:grid-cols-2 bg-Fondo2 rounded-xl row-span-2 lg:row-span-3 p-4 lg:p-12 gap-x-12 gap-y-3 my-4 lg:my-0 overflow-y-auto"
 				id="textos"
 			>
 				{trabajo[0].tareas.map((data, index) => {
