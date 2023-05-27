@@ -41,7 +41,7 @@ const Laboral = () => {
 					/>
 				</>
 			) : (
-				<div className="grid grid-cols-1 gap-12">
+				<div className="grid grid-cols-1 gap-4 lg:gap-12">
 					{listadoTrabajos.map((data) => {
 						return (
 							<>

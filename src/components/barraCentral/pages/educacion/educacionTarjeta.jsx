@@ -8,7 +8,7 @@ const EducacionTarjeta = ({ data }) => {
 				<img
 					src={data.img}
 					alt="Institucion"
-					className="p-0 lg:p-4 mx-auto col-span-1 object-cover"
+					className="p-2 lg:p-4 mx-auto col-span-1 object-cover"
 				/>
 				<div className="col-span-3 px-3">
 					<p className="sm:text-base lg:text-lg font-bold">{data.carrera}</p>

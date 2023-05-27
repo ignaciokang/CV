@@ -89,7 +89,7 @@ const Resumen = () => {
 		<div className="h-full bg-Fondo3 p-4 lg:p-12 grid grid-rows-3 gap-4 lg:gap-12 ">
 			<a.div
 				style={animation1}
-				className=" bg-Fondo2 rounded-xl row-span-1 text-center flex flex-col justify-center sm:text-sm lg:text-base "
+				className=" bg-Fondo2 rounded-xl row-span-1 text-center flex flex-col justify-center sm:text-sm lg:text-base p-4 "
 			>
 				<p>Soy un desarrollador Full Stack en constante crecimiento.</p>
 				<p className="sm:hidden lg:block">
@@ -104,7 +104,7 @@ const Resumen = () => {
 
 			<a.div
 				style={animation1}
-				className="grid grid-cols-2 gap-y-1 lg:gap-y-2 row-span-2"
+				className="grid grid-cols-2 gap-y-1 lg:gap-y-2 row-span-2 gap-x-4 lg:gap-x-0"
 			>
 				{skills.map((data) => {
 					return (
