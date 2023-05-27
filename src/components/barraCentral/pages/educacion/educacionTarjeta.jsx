@@ -3,15 +3,15 @@ import { SlGraduation } from 'react-icons/sl';
 
 const EducacionTarjeta = ({ data }) => {
 	return (
-		<div className="rounded-xl w-full p-4 grid grid-rows-2 bg-Fondo2">
+		<div className="rounded-xl h-full w-full p-4 grid grid-rows-2 bg-Fondo2">
 			<div className="items-center grid grid-cols-4 border-b border-gray-200">
 				<img
 					src={data.img}
 					alt="Institucion"
-					className="p-4 mx-auto col-span-1 object-cover"
+					className="p-0 lg:p-4 mx-auto col-span-1 object-cover"
 				/>
 				<div className="col-span-3 px-3">
-					<p className="text-lg font-bold">{data.carrera}</p>
+					<p className="sm:text-base lg:text-lg font-bold">{data.carrera}</p>
 					<p className="text-base">{data.institucion}</p>
 				</div>
 			</div>

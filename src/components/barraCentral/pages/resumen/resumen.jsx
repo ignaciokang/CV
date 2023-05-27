@@ -26,7 +26,7 @@ const Resumen = () => {
 		{
 			nombre: 'React',
 			logo: SiReact,
-			nivel: '75%',
+			nivel: '80%',
 		},
 		{
 			nombre: 'SQL',
@@ -36,12 +36,12 @@ const Resumen = () => {
 		{
 			nombre: 'HTML',
 			logo: SiHtml5,
-			nivel: '85%',
+			nivel: '90%',
 		},
 		{
 			nombre: 'NestJs',
 			logo: SiNestjs,
-			nivel: '65%',
+			nivel: '75%',
 		},
 		{
 			nombre: 'CSS',
@@ -51,17 +51,17 @@ const Resumen = () => {
 		{
 			nombre: 'MongoDB',
 			logo: SiMongodb,
-			nivel: '50%',
+			nivel: '60%',
 		},
 		{
 			nombre: 'Javascript',
 			logo: SiJavascript,
-			nivel: '75%',
+			nivel: '95%',
 		},
 		{
 			nombre: 'Node',
 			logo: FaNodeJs,
-			nivel: '65%',
+			nivel: '75%',
 		},
 		{
 			nombre: 'Angular',
@@ -71,12 +71,12 @@ const Resumen = () => {
 		{
 			nombre: 'Photoshop',
 			logo: SiAdobephotoshop,
-			nivel: '80%',
+			nivel: '85%',
 		},
 		{
 			nombre: 'Sass',
 			logo: SiSass,
-			nivel: '55%',
+			nivel: '65%',
 		},
 		{
 			nombre: 'Autocad 3D',
@@ -86,13 +86,13 @@ const Resumen = () => {
 	];
 
 	return (
-		<div className="h-full bg-Fondo3 p-12 grid grid-rows-3 gap-12 ">
+		<div className="h-full bg-Fondo3 p-4 lg:p-12 grid grid-rows-3 gap-4 lg:gap-12 ">
 			<a.div
 				style={animation1}
-				className=" bg-Fondo2 rounded-xl row-span-1 text-center flex flex-col justify-center text-base xl:text-lg"
+				className=" bg-Fondo2 rounded-xl row-span-1 text-center flex flex-col justify-center sm:text-sm lg:text-base "
 			>
 				<p>Soy un desarrollador Full Stack en constante crecimiento.</p>
-				<p>
+				<p className="sm:hidden lg:block">
 					Apasionado por crear y descubir, veo en la tecnología infinitas áreas
 					de interés.
 				</p>
@@ -102,13 +102,18 @@ const Resumen = () => {
 				</p>
 			</a.div>
 
-			<a.div style={animation1} className="grid grid-cols-2 gap-y-2 row-span-2">
+			<a.div
+				style={animation1}
+				className="grid grid-cols-2 gap-y-1 lg:gap-y-2 row-span-2"
+			>
 				{skills.map((data) => {
 					return (
 						<div className="flex justify-center items-center text-xl xl:text-2xl text-Primario">
-							<data.logo />
-							<div className="bg-Fondo2 w-1/2 rounded-[2rem] ml-2 text-center relative overflow-hidden">
-								<div className="w-full top-0 absolute h-full ">
+							<data.logo className="sm:hidden lg:block" />
+							<div className="bg-Fondo2 w-full lg:w-1/2 rounded-[2rem] ml-2 text-center relative overflow-hidden">
+								<div className="w-full top-0 absolute h-full flex sm:justify-start lg:justify-center items-center gap-x-2 sm:pl-4 lg:p-0">
+									<data.logo className="sm:block lg:hidden text-Fondo2" />
+
 									<p className="text-base xl:text-lg  font-semibold text-white">
 										{data.nombre}{' '}
 									</p>

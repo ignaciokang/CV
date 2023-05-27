@@ -32,7 +32,7 @@ const Laboral = () => {
 	});
 
 	return (
-		<a.div style={animation1} className="h-full p-12 overflow-auto">
+		<a.div style={animation1} className="h-full p-4 lg:p-12 overflow-auto">
 			{activo ? (
 				<>
 					<LaboralDetalle

@@ -16,9 +16,11 @@ const Educacion = () => {
 	});
 
 	return (
-		<div className="h-full overflow-y-auto p-12">
-			<p className="text-2xl mb-12 text-center font-semibold">Carreras</p>
-			<div className="grid grid-cols-2 gap-12">
+		<div className="h-full overflow-y-auto p-4 lg:px-12 lg:py-6">
+			<p className="text-lg lg:text-2xl mb-4 lg:mb-6 text-center font-semibold">
+				Carreras
+			</p>
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12">
 				{EducacionData.map((data, index) => {
 					return (
 						<a.div style={animation1}>
@@ -27,8 +29,10 @@ const Educacion = () => {
 					);
 				})}
 			</div>
-			<p className="text-2xl my-12 text-center font-semibold">Cursos</p>
-			<div className="grid grid-cols-2 gap-12">
+			<p className="text-lg lg:text-2xl my-4 lg:my-6 text-center font-semibold">
+				Cursos
+			</p>
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12">
 				{CursosData.map((data, index) => {
 					return (
 						<a.div style={animation1}>
