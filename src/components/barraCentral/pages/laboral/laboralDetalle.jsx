@@ -10,18 +10,16 @@ const LaboralDetalle = ({ trabajo, activarTrabajo }) => {
 		config: { duration: 200 },
 	});
 
-	console.log(trabajo);
-
 	return (
 		<a.div
 			style={animation1}
 			className="w-full h-full grid grid-rows-4 gap-4 lg:gap-12"
 		>
-			<div className="flex flex-col lg:flex-row items-center lg:row-span-1 justify-between gap-y-4 lg:gap-y-0 row-span-2">
+			<div className="grid grid-rows-2 lg:flex lg:flex-row items-center lg:row-span-1 justify-between gap-y-4 lg:gap-y-0 row-span-2">
 				<img
 					src={trabajo[0].logo}
 					alt="Logo empresa"
-					className="bg-white rounded-xl p-2 h-24 lg:w-24 w-full object-contain"
+					className="bg-white rounded-xl p-2 h-full lg:h-24 lg:w-24 w-full object-contain"
 				/>
 				<div className="text-center">
 					<p className="text-2xl mb-2 font-semibold">{trabajo[0].puesto}</p>

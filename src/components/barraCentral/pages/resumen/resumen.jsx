@@ -106,9 +106,12 @@ const Resumen = () => {
 				style={animation1}
 				className="grid grid-cols-2 gap-y-1 lg:gap-y-2 row-span-2 gap-x-4 lg:gap-x-0"
 			>
-				{skills.map((data) => {
+				{skills.map((data, index) => {
 					return (
-						<div className="flex justify-center items-center text-xl xl:text-2xl text-Primario">
+						<div
+							className="flex justify-center items-center text-xl xl:text-2xl text-Primario"
+							key={index}
+						>
 							<data.logo className="sm:hidden lg:block" />
 							<div className="bg-Fondo2 w-full lg:w-1/2 rounded-[2rem] ml-2 text-center relative overflow-hidden">
 								<div className="w-full top-0 absolute h-full flex sm:justify-start lg:justify-center items-center gap-x-2 sm:pl-4 lg:p-0">

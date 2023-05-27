@@ -18,7 +18,6 @@ const Laboral = () => {
 			const newArray = trabajos.filter((work) => work.id.includes(idTrabajo));
 			setTrabajoActivo(newArray);
 			setActivo(true);
-			console.log(newArray);
 		} else {
 			setActivo(false);
 			setTrabajoActivo({});
@@ -41,11 +40,12 @@ const Laboral = () => {
 					/>
 				</>
 			) : (
-				<div className="grid grid-cols-1 gap-4 lg:gap-12">
-					{listadoTrabajos.map((data) => {
+				<div className="grid grid-rows-4 gap-4 lg:gap-12">
+					{listadoTrabajos.map((data, index) => {
 						return (
 							<>
 								<LaboralTarjeta
+									key={index}
 									trabajo={data}
 									activarTrabajo={activarTrabajo}
 								/>

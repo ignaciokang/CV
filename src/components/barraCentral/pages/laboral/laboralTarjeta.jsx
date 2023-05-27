@@ -8,7 +8,7 @@ const LaboralTarjeta = ({ trabajo, activarTrabajo }) => {
 			onClick={() => {
 				activarTrabajo(trabajo.id);
 			}}
-			className="bg-Fondo2 rounded-xl px-4 lg:px-12 py-6 h-32 items-center hover:border-2 flex justify-between w-full transition-colors ease-in"
+			className="bg-Fondo2 rounded-xl px-4 lg:px-12 py-6 h-full items-center hover:outline outline-2 flex justify-between w-full transition-colors ease-in"
 		>
 			<img
 				src={trabajo.logo}
@@ -16,7 +16,7 @@ const LaboralTarjeta = ({ trabajo, activarTrabajo }) => {
 				className="bg-white rounded-xl p-2 h-16 w-16 lg:h-24 lg:w-24 object-contain"
 			/>
 			<div>
-				<p className="text-base lg:text-xl mb-2 font-semibold text-left pl-2 lg:text-center lg:pl-0">
+				<p className="text-base lg:text-xl mb-2 font-semibold text-left pl-2 lg:text-center lg:pl-0 ">
 					{trabajo.puesto}
 				</p>
 				<div className="lg:flex-row flex flex-col items-start lg:items-center lg:space-x-2 pl-2 lg:p-0">

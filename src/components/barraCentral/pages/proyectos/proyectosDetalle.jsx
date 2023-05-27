@@ -62,8 +62,8 @@ const ProyectosDetalle = ({ proyecto, activarProyecto }) => {
 				<div>
 					<p className="font-semibold mb-3">Tecnologías utilizadas:</p>
 					<div className="flex justify-around">
-						{proyecto[0].tecnologias.map((data) => {
-							return <Tecnologias tecnologia={data} />;
+						{proyecto[0].tecnologias.map((data, index) => {
+							return <Tecnologias tecnologia={data} key={index} />;
 						})}
 					</div>
 				</div>

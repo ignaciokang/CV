@@ -33,7 +33,6 @@ const Proyectos = () => {
 			);
 			setProyectoActivo(newArray);
 			setActivo(true);
-			console.log(newArray);
 		} else {
 			setActivo(false);
 			setProyectoActivo({});

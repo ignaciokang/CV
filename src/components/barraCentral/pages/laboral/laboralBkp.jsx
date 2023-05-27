@@ -130,7 +130,7 @@ const Laboral = () => {
 						return (
 							<LaboralTarjeta
 								trabajo={trabajo}
-								index={index}
+								key={index}
 								activarTrabajoDetalle={activarTrabajoDetalle}
 							/>
 						);
