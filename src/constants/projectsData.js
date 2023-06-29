@@ -42,8 +42,8 @@ const ProjectsData = [
 		descripcion:
 			'Final de materia: Diseño de interfaces de la Escuela Da Vinci (Técnico Superior en Diseño y Programación Web). El objetivo de la materia fue <b>diseñar</b> una página web para una entidad a elección y adaptar los diseños de ordenador a <b>mobile</b>. ',
 		tecnologias: ['photoshop', 'html', 'css'],
-		link: 'https://drive.google.com/drive/u/0/folders/1KHuWkGnMIju9ZFayw1kqHPxzZf9idOI3',
-		boton: 'Ver imágenes',
+		link: 'https://ignaciokang.github.io/estrellaboedo',
+		boton: 'Visitar Web',
 	},
 	{
 		id: 'pastillasWeb',
